@@ -1,6 +1,6 @@
 A small blog made with node.js, mongoDB and javascript.
 
-Can do change, delete, modify, query blog content, and set up a login, registration and other functions.
+Users can change, delete, modify, query blog content. The website is also set up a login, registration and other functions.
 
 Login Page
 <img width="1470" alt="Screenshot 2024-09-30 at 5 45 05 PM" src="https://github.com/user-attachments/assets/0aad4b53-6f5a-4a5c-b5bb-d93a91c7ff48">
