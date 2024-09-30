@@ -1,0 +1,30 @@
+<div class="author"></div>
+    <h1 class="author__heading"> Hi, I am Feifan.</h1>
+    <p class="author__body">A man struggling with the world.</p>
+</div>
+
+<img src="https://img.freepik.com/premium-photo/cats-draw-cats-paint-cats-color-cats-black-white-drawing-cats-picture-cats_994023-101844.jpg?size=338&ext=jpg&ga=GA1.1.1819120589.1727568000&semt=ais_hybrid" alt="Person looking out through mountains" class="drawing" width="981" height="528">
+
+
+<section class="articles">
+
+    <h2 class="article__heading">Latest posts</h2>
+    <ul class="article-ul">
+
+      <% data.forEach(post => { %>
+      <li>
+        <a href="/post/<%= post._id %>">
+          <span><%= post.title %></span>
+          <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+        </a>
+      </li>
+      <% }) %>
+  </ul>
+  <% if (nextPage !== null) { %>
+    <a href="/?page=<%=nextPage %>" class="pagination">&lt; View Older Posts</a>
+  <% } %>
+
+
+  </section>
+
+ 
